@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+
+.container-one {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f4f4;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.container-one > h1,h2 {
+  color: #0077c7;
+  padding: 10px 0;
+}
+
+.container-two {
+  width: 100%;
+}
+
+.form-center {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+  gap: 10px;
+}
+
+.form-center > div{
+  color: #fff;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  background-color: #3d92cb;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.list {
+  margin: 0 20px;
+}
+
+.item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #3d92cb;
+}
+
+.item:hover {
+  color: black;
+  background-color: #d1eaf0;
+}
+
+.info {
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input {
+  background-color: #c9eef7;
+  padding: 0 5px;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  outline: none;
+}
+
+.btns {
+  flex-basis: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  text-align: center;
+  margin: 5px 0 5px 0;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c9eef7;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0077c7;
+}
+
+.btn-icon {
+  padding: 0;
+}
+
+.edit-btn, .delete-btn {
+  padding: 0 2px;
+  border: none;
+  border-radius: 2px;
+}
+
+.edit-btn:hover {
+  color: #fff;
+  background-color: #0077c7;  
+}
+
+.delete-btn:hover {
+  color: #fff;
+  background-color: #c23a3a;  
+}
+
+.alert {
+  position: absolute;
+  top: 2%;
+  width: 80%;
+  color: #fff;
+  background-color: #c23a3a;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.expense {
+  text-align: justify;
+}
+
+@media only screen and (max-width : 500px) {
+  .form-center {
+    flex-direction: column;
+  }
+
+  .info {
+    flex-basis: 80%;
+  }
+
+  .container-one > h1,h2 {
+    font-size: 1.5rem;
+  }
+
+  .container-one {
+    width: 95%;
+  }
+
+  .btns {
+    gap: 3px;
+  }
+}
