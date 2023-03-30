@@ -15,6 +15,7 @@
 
 .container-one {
   width: 80%;
+  max-width: 1200 px;
   display: flex;
   flex-direction: column;
   justify-content: center;
